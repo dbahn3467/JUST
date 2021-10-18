@@ -1,0 +1,16 @@
+def pv_f(fv,r,n):
+    """Object: calculate the present value
+                    fv
+    formula : pv=------------
+                    (1+r)^n
+              fv: future value
+              r: discount rate by period
+              n: toral number of periods
+              
+    example #1: >>>pv_f(100,0.1,1)
+                    90.9090909090909
+                    
+    example #2: >>>pv_f(r=0.1,fv=100,n=1)
+                    90.9090909090909
+    """
+    return fv/(1+r)**n
